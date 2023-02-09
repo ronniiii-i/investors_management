@@ -160,7 +160,7 @@ section {
 #details div {
     width: 35%;
     padding: 1vw;
-    min-width: 400px;
+    min-width: 350px;
 }
 
 #details .text * {
@@ -231,6 +231,7 @@ section {
 }
 
 @media screen and (max-width: 962px) {
+
     #hero .left,
     #details div {
         width: 45%;
@@ -280,5 +281,35 @@ section {
         bottom: 0;
         z-index: 0;
         /* margin-top: 5vw; */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #details {
+        padding-top: 10vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #hero .right {
+        margin-top: calc(-50px + -4rem);
+    }
+
+    #hero .right img {
+        transform: translateY(calc(50px + 4rem));
+    }
+
+    #hero .whitespace {
+        bottom: -4rem;
+    }
+
+    #details {
+        padding-top: 15vw;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #details {
+        padding-top: 20vw;
     }
 }
