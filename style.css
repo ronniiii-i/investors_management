@@ -6,7 +6,7 @@
 
 :root {
     /* font-size: ; */
-    font-size: calc(62.5% + 0.390625vw);
+    font-size: calc(62.5% + 0.350625vw);
     /* font-family */
     font-family: 'Open Sans', sans-serif;
 }
@@ -92,14 +92,19 @@ section {
 }
 
 #hero {
-    background-image: linear-gradient(rgb(13, 16, 12, 0.7), rgba(0, 0, 0, 0.3)), url(https://github.com/daniel-agbonifo/lobbycre/blob/master/Assets/hero%20image.png?raw=true);
+    background: linear-gradient(rgb(13, 16, 12, 0.7), rgba(0, 0, 0, 0.3)), url(https://github.com/daniel-agbonifo/lobbycre/blob/master/Assets/hero%20image.png?raw=true) top;
+    /* padding: 40px 2vw; */
+    /* height: 80vh; */
+    position: relative;
 }
 
 #hero div {
     width: 40%;
-    min-width: 300px;
-    /* padding-top: 5%; */
-    /* height: 100%; */
+    min-width: 400px;
+}
+
+#hero .left {
+    /* padding: 3vw 0; */
 }
 
 #hero .left * {
@@ -107,8 +112,8 @@ section {
 }
 
 #hero .left img {
-    width: 100%;
-    max-width: 250px;
+    width: 50%;
+    max-width: 200px;
 }
 
 #hero .left h1 {
@@ -125,13 +130,155 @@ section {
 }
 
 #hero .right {
-    margin-top: -10%;
+    margin-top: -50px;
+    position: relative;
+    height: 100%;
 }
 
 #hero .right img {
     width: 100%;
-    /* position: absolute;
-    bottom: -10%; */
+    z-index: 5;
+    position: relative;
     /* max-width: 250px; */
-    transform: translateY(20%);
+    transform: translateY(50px);
+}
+
+#hero .whitespace {
+    height: calc(3vw + 2rem);
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    /* margin-top: 5vw; */
+}
+
+#details {
+    padding: 2vw 1vw;
+}
+
+#details div {
+    width: 35%;
+    padding: 1vw;
+    min-width: 400px;
+}
+
+#details .text * {
+    margin-block: 1vw;
+}
+
+#details .form {
+    padding-block: 2vw;
+}
+
+#details .form h1 {
+    margin-bottom: 1vw;
+}
+
+
+/* media screen */
+
+@media screen and (max-width: 1100px) {
+    #hero .right {
+        margin-top: calc(-50px + -1rem);
+    }
+
+    #hero .right img {
+        transform: translateY(calc(50px + 1rem));
+    }
+
+    #hero .whitespace {
+        bottom: -1rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    #hero div,
+    #details div {
+        width: 42%;
+    }
+
+    #hero .right {
+        margin-top: calc(-50px + -2rem);
+    }
+
+    #hero .right img {
+        transform: translateY(calc(50px + 2rem));
+    }
+
+    #hero .whitespace {
+        bottom: -2rem;
+    }
+
+    #details {
+        padding-top: 4vw;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #hero .right {
+        margin-top: calc(-50px + -3rem);
+    }
+
+    #hero .right img {
+        transform: translateY(calc(50px + 3rem));
+    }
+
+    #hero .whitespace {
+        bottom: -3rem;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    #hero .left,
+    #details div {
+        width: 45%;
+    }
+
+    #hero .left {
+        padding-left: 3vw;
+    }
+
+    #hero .right {
+        margin-top: calc(-50px + -4rem);
+    }
+
+    #hero .right img {
+        transform: translateY(calc(50px + 4rem));
+    }
+
+    #hero .whitespace {
+        bottom: -4rem;
+    }
+
+    #details {
+        padding-top: 6vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #hero {
+        padding: 3vw 0;
+    }
+
+    #hero div,
+    #details div {
+        min-width: 80% !important;
+        text-align: center;
+    }
+
+    #hero .left a {
+        margin: 2vw auto;
+    }
+
+    #hero .whitespace {
+        height: calc(3vw + 2rem);
+        width: 100% !important;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        /* margin-top: 5vw; */
+    }
 }
