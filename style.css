@@ -1,6 +1,6 @@
 /* Font Import */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* Pre Styles */
 
@@ -8,7 +8,7 @@
     /* font-size: ; */
     font-size: calc(62.5% + 0.390625vw);
     /* font-family */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -24,24 +24,25 @@ html {
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 2.9rem;
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 2.3rem;
 }
 
 h3 {
     font-size: 1.2rem;
 }
 
-a{
+a {
     text-decoration: none;
+    display: block;
     transition: all .5s;
     color: #3bb4fa;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
     color: #007BC2;
 }
@@ -51,7 +52,7 @@ button {
     cursor: pointer;
 }
 
-img{
+img {
     width: 100%;
 }
 
@@ -81,4 +82,56 @@ img{
 
 .justify-between {
     justify-content: space-between;
+}
+
+/* Page Styling */
+
+section {
+    width: 100%;
+    /* padding: 2vw; */
+}
+
+#hero {
+    background-image: linear-gradient(rgb(13, 16, 12, 0.7), rgba(0, 0, 0, 0.3)), url(https://github.com/daniel-agbonifo/lobbycre/blob/master/Assets/hero%20image.png?raw=true);
+}
+
+#hero div {
+    width: 40%;
+    min-width: 300px;
+    /* padding-top: 5%; */
+    /* height: 100%; */
+}
+
+#hero .left * {
+    margin-block: 1vw;
+}
+
+#hero .left img {
+    width: 100%;
+    max-width: 250px;
+}
+
+#hero .left h1 {
+    font-weight: 400;
+    color: white;
+}
+
+#hero .left a {
+    padding: 12px 24px;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+#hero .right {
+    margin-top: -10%;
+}
+
+#hero .right img {
+    width: 100%;
+    /* position: absolute;
+    bottom: -10%; */
+    /* max-width: 250px; */
+    transform: translateY(20%);
 }
