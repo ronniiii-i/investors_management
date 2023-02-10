@@ -175,6 +175,48 @@ section {
     margin-bottom: 1vw;
 }
 
+#what_you_learn{
+    padding: 3vw 5vw;
+    background-color: #e7e7e7;
+}
+
+#what_you_learn h1 {
+    font-weight: 400;
+    text-align: center;
+    color: #007BC2;
+    margin-block: 1vw;
+}
+#what_you_learn .flex{
+    padding: 2vw 1vw;
+}
+
+#what_you_learn .flex .column{
+    width: 29%;
+    /* flex-grow: 1; */
+    min-height: 270px;
+}
+
+#what_you_learn .flex .column .icon i{
+    /* width: 50px;
+    height: 50px; */
+    font-size: 30px;
+    background-color: #003d60;
+    color: white;
+    padding: 35px;
+    border-radius: 100px;
+    text-align: center;
+    margin: auto;
+}
+#what_you_learn .flex .column .divider{
+    border-top: 1px solid black;
+    margin-block: 1vw;
+    height: 1px;
+    width: 80%;
+}
+#what_you_learn .flex .column p{
+    width: 80%;
+    text-align: center;
+}
 
 /* media screen */
 
